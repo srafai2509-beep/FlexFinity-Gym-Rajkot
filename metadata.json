@@ -1,0 +1,6 @@
+{
+  "name": "FlexFinity Gym - Premium Performance & Recovery Club",
+  "description": "Luxurious, high-converting fitness club with dark aesthetic, electric blue and neon orange accents, glassmorphic 3D depth, VIP day passes, and elite training programs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

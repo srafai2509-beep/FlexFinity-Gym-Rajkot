@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Barlow Condensed', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  --color-brand-blue: #00D2FF;
+  --color-brand-blue-deep: #0066FF;
+  --color-brand-orange: #FF5E1A;
+  --color-brand-orange-neon: #FF7700;
+  --color-dark-void: #05070B;
+  --color-dark-surface: #0E121A;
+  --color-dark-card: #141A24;
+  --color-dark-border: rgba(255, 255, 255, 0.08);
+}
+
+:root {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color-scheme: dark;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080a0f;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e2638;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00D2FF;
+}
+
+/* Glassmorphism primitives */
+.glass-panel {
+  background: rgba(18, 24, 36, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-elevated {
+  background: rgba(22, 29, 44, 0.78);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.6);
+}
+
+.glass-glow-blue {
+  box-shadow: 0 0 40px -10px rgba(0, 210, 255, 0.25);
+}
+
+.glass-glow-orange {
+  box-shadow: 0 0 40px -10px rgba(255, 94, 26, 0.25);
+}
+
+/* 3D perspective transforms */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+/* Neon text & gradient accents */
+.text-gradient-electric {
+  background: linear-gradient(135deg, #FFFFFF 20%, #00D2FF 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-fire {
+  background: linear-gradient(135deg, #FFFFFF 20%, #FF5E1A 85%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-duo {
+  background: linear-gradient(110deg, #FFFFFF 15%, #00D2FF 55%, #FF7700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Subtle grid backdrop */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
