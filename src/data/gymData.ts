@@ -1,9 +1,9 @@
 import { Program, ClassSession, Coach, MembershipPlan, TransformationStory } from '../types/index.ts';
 
-export const HERO_IMAGE = '/src/assets/images/hero_flexfinity_gym_1791957504205.jpg';
-export const OLYMPIC_IMAGE = '/src/assets/images/facility_olympic_training_1791957505606.jpg';
-export const SPA_IMAGE = '/src/assets/images/facility_recovery_spa_1791957505817.jpg';
-export const HEAD_COACH_IMAGE = '/src/assets/images/trainer_performance_coach_1791957505827.jpg';
+export const HERO_IMAGE = new URL('../assets/images/hero_flexfinity_gym_1791957504205.jpg', import.meta.url).href;
+export const OLYMPIC_IMAGE = new URL('../assets/images/facility_olympic_training_1791957505606.jpg', import.meta.url).href;
+export const SPA_IMAGE = new URL('../assets/images/facility_recovery_spa_1791957505817.jpg', import.meta.url).href;
+export const HEAD_COACH_IMAGE = new URL('../assets/images/trainer_performance_coach_1791957505827.jpg', import.meta.url).href;
 
 export const GYM_STATS = [
   { value: '45,000', unit: 'sq ft', label: 'Flagship Athletic Compound' },
